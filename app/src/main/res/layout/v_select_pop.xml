@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/recycleView"
+        android:background="#F3F7F8">
+
+        <TextView
+            android:id="@+id/cancle"
+            style="@style/Title_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/cancer" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Title_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/guild" />
+
+        <TextView
+            android:id="@+id/confirm"
+            style="@style/Title_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/top"></RelativeLayout>
+</RelativeLayout>

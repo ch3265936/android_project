@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hanglinpai.widget.RoundedImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="-35dp"
+        app:riv_oval="true"
+        android:contentDescription="@string/app_name" />
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top"
+            layout="@layout/layout_title"></include>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@color/transparent"></android.support.v7.widget.RecyclerView>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_msg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#F5F9FA">
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_send_2"
+            android:gravity="center"
+            android:text="@string/send"
+            android:enabled="false"
+            android:textColor="@color/secondColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/send"
+            android:background="@drawable/btn_recorder_normal"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/secondColor"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/r_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_gray_edit"
+                android:gravity="left"
+                android:maxLength="256"
+                android:padding="15dp"
+                android:textColor="@color/secondColor"
+                android:textColorHint="@color/thirdColor"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/change_content"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_select"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/r_bottom"></View>
+    </RelativeLayout>
+</FrameLayout>

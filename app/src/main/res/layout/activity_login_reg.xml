@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/r_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/r_tab"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/login_reg_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo" />
+
+
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:xTabMode="fixed"
+            app:xTabIndicatorColor="#FFF"
+            app:xTabIndicatorHeight="1dp"
+            app:xTabIndicatorWidth="30dp"
+            app:xTabSelectedTextColor="#FFF"
+            app:xTabTextColor="#ddd"
+            app:xTabTextSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            app:xTabSelectedTextSize="16sp"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/r_tab">
+</android.support.v4.view.ViewPager></RelativeLayout>
+
+
+

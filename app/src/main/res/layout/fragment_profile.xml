@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/r_top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/yuan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/massage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:src="@mipmap/icon_message" />
+
+            <ImageView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="13dp"
+                android:visibility="gone"
+                android:src="@mipmap/icon_point" />
+        </RelativeLayout>
+
+
+        <com.hanglinpai.widget.RoundedImageView
+            android:id="@+id/avl"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_user_def"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/avl"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/account"
+                style="@style/Title_first"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/info"
+                style="@style/Title_second"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@mipmap/icon_shenhe"
+                android:drawablePadding="3dp"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/no_att" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.hanglinpai.widget.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/driver"></View>
+
+            <RelativeLayout
+                android:id="@+id/r_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/icon_aboutus"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/about"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_enter" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/icon_feedback"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/feedback"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_enter" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/icon_set"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/my_setting"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_enter" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r_share"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/icon_share"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/my_share"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_enter" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.hanglinpai.widget.BounceScrollView>
+</LinearLayout>
+
+
+
+
+
+

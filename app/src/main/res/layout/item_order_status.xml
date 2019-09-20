@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+
+    <ImageView
+        android:id="@+id/order_point"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_order_point" />
+
+    <TextView
+        android:id="@+id/order_status"
+        style="@style/Title_second"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/order_point"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="订单提交成功" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/Title_third"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="right|center"
+        android:singleLine="true"
+        android:text="4-2 14:20" />
+
+    <View
+        android:id="@+id/dirver"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/order_point"
+        android:layout_marginLeft="12dp"
+        android:background="#C3DCF8"></View>
+
+
+</RelativeLayout>

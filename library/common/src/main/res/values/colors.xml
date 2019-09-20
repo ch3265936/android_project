@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--1.0.0 主题色-->
+    <color name="colorPrimary">#5c8df0</color>
+    <color name="colorPrimaryDark">#5c8df0</color>
+    <color name="colorAccent">#5c8df0</color>
+    <color name="buttonColor">#4894f3</color>
+    <color name="buttonColor_select">#4874f3</color>
+    <color name="background">#edebf0</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_color">#121212</color>
+    <color name="main_color2">#121212</color>
+    <color name="driver">#dce0e6</color>
+    <color name="main_color_transparent">#a05C3317</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#f3f3f3</color>
+    <color name="red">#ed2f26</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#69cda8</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="firstColor">#464857</color>
+    <color name="secondColor">#666666</color>
+    <color name="thirdColor">#999999</color>
+</resources>

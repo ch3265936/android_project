@@ -1,0 +1,21 @@
+<resources>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">还没有数据哦</string>
+    <string name="loading">请稍后...</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+    <string name="connecting_text">Connecting&#8230;</string>
+    <string name="connected_text">超时,请检查您的网络</string>
+    <string name="connected_fail_text">无缓存,请检查网络</string>
+    <string name="connection_error_text">Connection error</string>
+    <!--update模块-->
+    <string name="update_title">快下载更新体验一下吧</string>
+    <string name="update_new_version">您有新版本</string>
+    <string name="update_install">安装</string>
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_failed_msg">下载失败，请检查网络连接或 SD卡存储空间</string>
+    <string name="update_download_start">开始下载</string>
+    <string name="update_download_processing">正在下载</string>
+    <string name="update_download_finish">下载完成</string>
+
+</resources>

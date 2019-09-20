@@ -1,0 +1,75 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="IntroTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Dialog_todo" parent="Base.Theme.AppCompat.Dialog">
+    </style>
+
+    <style name="MyCustomTabLayout">
+        <!-- 改变指示器下标的颜色-->
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <!-- 改变选中字体的颜色-->
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <!-- 改变未选中字体的颜色-->
+        <item name="tabTextColor">#666666</item>
+
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/show_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/hid_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="Title_first">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="Title_second">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="Title_third">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">36dip</item>
+        <item name="android:maxHeight">36dip</item>
+    </style>
+    <style name="LiveActivityStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

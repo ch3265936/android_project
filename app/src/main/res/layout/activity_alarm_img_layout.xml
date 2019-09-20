@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="70dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="70dp">
+
+    <com.hanglinpai.widget.RoundedImageView
+        android:id="@+id/img_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:riv_corner_radius="5dp"
+        android:clickable="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/mDeleteView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@mipmap/icon_delete"
+/>
+</RelativeLayout>

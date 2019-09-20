@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/transparent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date">
+
+
+        <com.hanglinpai.widget.RoundedImageView
+            android:id="@+id/avl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_user_def"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_right"
+            android:layout_toLeftOf="@id/avl"
+            android:gravity="center|left"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

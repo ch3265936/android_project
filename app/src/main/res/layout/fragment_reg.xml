@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_account"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/icon_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:hint="@string/input_phone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/secondColor"
+                android:textColorHint="@color/thirdColor"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/driver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_code"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/icon_code"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="@string/input_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@color/secondColor"
+                    android:textColorHint="@color/thirdColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/buttonColor_select"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/driver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:digits="@string/dists"
+                    android:drawableLeft="@mipmap/icon_password"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="@string/set_password"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:textColor="@color/secondColor"
+                    android:textColorHint="@color/thirdColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/driver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/reg_tip_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/check"
+                    android:gravity="center|left"
+                    android:text="@string/reg_tip_bottom"
+                    android:textColor="@color/secondColor" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg_select"
+                android:gravity="center"
+                android:text="@string/reg"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

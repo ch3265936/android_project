@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green">
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/lastMonth"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/title"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/ic_left" />
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/title"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right"
+             />
+
+    </RelativeLayout>
+
+    <com.othershe.calendarview.weiget.WeekView
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <com.othershe.calendarview.weiget.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        calendarview:choose_type="multi"
+        calendarview:show_holiday="true"
+        calendarview:show_lunar="true"
+        calendarview:show_last_next="false"
+        calendarview:show_term="true"
+        calendarview:switch_choose="false" />
+
+
+
+
+</LinearLayout>

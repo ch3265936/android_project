@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"></include>
+
+    <include layout="@layout/fragment_calendar_head_layout"></include>
+
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_none" />
+
+        <TextView
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/no_select_date" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/affirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_new_order"
+            android:gravity="center"
+            android:text="@string/affirm"
+            android:textColor="@color/white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background"></View>
+        <TextView
+            android:id="@+id/select_tip"
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/select_date_til" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_tip"
+            android:layout_marginBottom="60dp"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@color/background"></View>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

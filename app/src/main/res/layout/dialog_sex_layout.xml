@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/man"
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="男" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/driver"></View>
+
+        <TextView
+            android:id="@+id/women"
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="女"
+            android:gravity="center" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/driver"></View>
+        <TextView
+            android:id="@+id/cancer"
+            style="@style/Title_third"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/cancer"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

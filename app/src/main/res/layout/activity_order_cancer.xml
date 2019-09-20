@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"></include>
+
+        <com.hanglinpai.widget.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_special_reason_tip"
+                    style="@style/Title_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="15dp"
+                    android:text="@string/cancer_order_reason_tip" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"></android.support.v7.widget.RecyclerView>
+
+                <EditText
+                    android:id="@+id/content"
+                    style="@style/Title_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_gray_edit"
+                    android:gravity="left"
+                    android:hint="@string/other_reason"
+                    android:maxLength="100"
+                    android:padding="15dp"
+                    android:textColorHint="@color/thirdColor" />
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_select"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </com.hanglinpai.widget.BounceScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

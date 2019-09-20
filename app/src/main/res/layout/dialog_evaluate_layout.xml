@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_10_white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/driver"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Title_first"
+                android:gravity="center"
+                android:text="@string/affirm_point" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/driver"></View>
+        </LinearLayout>
+
+        <com.hanglinpai.widget.RoundedImageView
+            android:layout_width="65dp"
+            android:id="@+id/avl"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_expert_head_01"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/Title_second"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/driver"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/Title_third"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="left|center"
+                android:text="@string/star_point" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center_vertical"
+                android:isIndicator="false"
+                android:stepSize="1"
+                android:numStars="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/Title_third"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="left|center"
+                android:text="@string/star_yq" />
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:isIndicator="false"
+                android:layout_marginTop="2dp"
+                android:stepSize="1"
+                android:numStars="5" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/affirm"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_select"
+            android:gravity="center"
+            android:text="@string/affirm"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_close" />
+</RelativeLayout>

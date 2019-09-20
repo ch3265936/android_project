@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/r_top"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/layout_title"></include>
+
+    <com.hanglinpai.widget.BounceScrollView
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:id="@+id/r_guild"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/red_guild_tip"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/red_guild_tip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/guild"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_enter" />
+
+                <TextView
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:id="@+id/guild"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:layout_toStartOf="@+id/imageView"
+                    android:layout_width="249dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:background="@color/driver"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:id="@+id/r_server"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/red_server_tip"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/server_tip"
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/red_server_tip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/serve"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_enter" />
+
+                <TextView
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:hint="多选"
+                    android:id="@+id/server"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@id/server_tip"
+                    android:singleLine="true"
+                    android:textColor="@color/secondColor"
+                    android:textColorHint="@color/thirdColor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:background="@color/driver"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:id="@+id/r_start_time"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/red_server_start_time_tip"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/red_server_start_time_tip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/start_time"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_enter" />
+
+                <TextView
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:id="@+id/start_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="249dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:background="@color/driver"
+                    android:id="@+id/view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"></View>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/r_server_time"
+                android:background="@color/white"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/red_server_time_tip"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/red_server_time_tip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/serve_time"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_enter" />
+
+                <TextView
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:id="@+id/server_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="249dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:background="@color/driver"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:id="@+id/r_position"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/red_server_address_tip"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="* "
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/red_server_address_tip"
+                    android:layout_width="wrap_content"
+                    android:text="@string/serve_address"
+                    android:textColor="@color/secondColor"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:id="@+id/server_address"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_height="match_parent"
+                    android:layout_width="249dp"
+                    android:singleLine="true"
+                    android:textColor="@color/secondColor"
+                    android:textColorHint="@color/thirdColor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:background="@color/driver"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"></View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_gray_edit"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:background="@color/driver"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"></View>
+
+                    <TextView
+                        style="@style/Title_second"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/describe" />
+
+                    <View
+                        android:background="@color/driver"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"></View>
+                </LinearLayout>
+
+                <EditText
+                    style="@style/Title_second"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:id="@+id/desc"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="3dp"
+                    android:hint="@string/order_desc"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/Title_second"
+                android:background="@drawable/bg_select"
+                android:gravity="center"
+                android:id="@+id/issue"
+                android:layout_gravity="bottom"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:text="@string/affirm_new_order"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.hanglinpai.widget.BounceScrollView>
+
+
+</LinearLayout>
+
+</RelativeLayout>
+

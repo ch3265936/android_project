@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.github.Othershe'
+
+android {
+    compileSdkVersion 26
+    lintOptions{
+        abortOnError false
+    }
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+task makeJar(type: Copy) {
+    delete 'build/libs/calendarview.jar' //删除已经存在的jar包
+    from('build/intermediates/bundles/release/')//从该目录下加载要打包的文件
+    into('build/libs/')//jar包的保存目录
+    include('classes.jar')//设置过滤，只打包classes文件
+    rename('classes.jar', 'calendarview.jar')//重命名，mylibrary.jar 根据自己的需求设置
+}
+makeJar.dependsOn(build)
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.android.support:appcompat-v7:25.1.0'
+}

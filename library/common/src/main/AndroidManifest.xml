@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="www.meiyaoni.com.common">
+
+    <application android:allowBackup="true"
+        android:supportsRtl="true">
+        <!--自动更新服务-->
+        <service android:name="www.meiyaoni.com.common.autUpdata.UpdateService" />
+        <provider
+            android:name="www.meiyaoni.com.common.MyProvider"
+            android:authorities="www.meiyaoni.com.common.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                tools:replace="android:resource"
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

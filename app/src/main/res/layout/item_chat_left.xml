@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/transparent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date">
+
+
+        <com.hanglinpai.widget.RoundedImageView
+            android:id="@+id/avl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_counselor" />
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/avl"
+            android:text="试试水"
+            android:background="@drawable/ic_left"
+            android:gravity="center|left"
+            android:textColor="@color/firstColor"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
